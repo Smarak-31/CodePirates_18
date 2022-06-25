@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,400&display=swap');
+.product{
+    display: flex;
+    font-style: italic;
+    font-family: 'lato', sans-serif;
+}
+.image12{
+    margin: 10px 20px;
+    height: 400px;
+    width: 400px;
+}
+.product1{
+    font-family: 'lato', sans-serif;
+font-style: italic;
+}
+.title{
+    font-style: italic;
+    font-family:'lato',sans-serif;
+    color:black;
+    font-size: 50px;
+}
+.title1{
+    font-style: italic;
+    font-family:'lato',sans-serif;
+    color:black;
+    font-size: 90px;
+    border-bottom: 2px solid brown;
+    background-color: #eaddbe;
+}
+.navbar{
+    background-color: #eaddbe;
+}

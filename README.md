@@ -8,7 +8,7 @@ To help artisans expand their business and globalise Indian Handicraft industry,
 
 The technologies we have used are: 
 1. HTML, CSS, and JavaScript for FrontEnd
-2. NodeJs and Googlr authentication for BackEnd
+2. NodeJs and Google authentication for BackEnd
 
 For launch all we need for the user is to connect to internet.
 

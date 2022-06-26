@@ -1,41 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>KraftOfi:Loginup</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatics.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=XCinzel&family=Lato&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="form.css">
-    </head>
-    <body>
-        <img src ="img/loading.gif" class ="loader" alt="">
-        <section class ="form-section">
-            <div class ="form-container">
-                <img src="img/C:\Users\smara\Downloads\login-bg.png" class="form-img" alt="">
-                <div class="form">
-                    <h1 class="form-heading">Welcome Back Login Here</h1>
-                   
-                    <input type ="email" autocomplete="off" id="email" placeholder="email"><br>
-                    <input type ="password" autocomplete="off" id="password" placeholder="password"><br>
-                    
-                    <!-- <span class="error">**this is an error</span> -->
-                    
-                    <button class="submit-btn">Log In</button><br>
-                    <a href ="/signup"class ="other-form-link">Don't have an account? Create</a>
-                                
-                </div>
-                <img src="img/C:\Users\smara\Downloads\login-bg.png"class="form-ing" alt="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id"
+        content="345945778478-aankl713g79e4c6ker45kss7sffj1ban.apps.googleusercontent.com">
+    <title>KraftOfi:Loginup</title>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatics.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=XCinzel&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+
+
+</head>
+
+<body>
+    <nav class="navbar2">
+        <ul class="links">
+            <li class="link-item"><a href="index.html" class="link">Home</a></li>
+            
+            <li class="link-item"><div class="dropdown">
+                <button class="dropbtn">Products</button>
+                <div class="dropdown-content">
+                  <ul><a href="#">Handloom</a>
+                   <li class="link-item"><a href="sarees.html">Saree</a></li>
+                   <li class="link-item"><a href="kurtis.html"> kurtis for women</a></li>
+                   <li class="link-item"><a href="bags.html">handbags</a></li>
+                   <li class="link-item"><a href="dhupattas.html"> dhupattas</a></li>
+                   <li class="link-item"><a href="kurtas.html"> kurta for men</a></li>
+                   <li class="link-item"><a href="waistcoat.html"> waistcoat for men</a></li></ul>
+    
+    
+    
+                 <ul> <a href="#">Handicraft</a>
+                    <li class="link-item"><a href="utensils.html">utensils</a></li>
+                <li class="link-item"><a href="cookware.html">cookware</a></li>
+                <li class="link-item"><a href="containers.html"> containers</a></li>
+                <li class="link-item"><a href="decoritems.html">decor items</a> </li>
+              </div></li>
+              <li class="link-item"><div class="dropdown">
+                <button class="dropbtn">Blog</button>
+                <div class="dropdown-content">
+                  <ul>
+                   <li class="link-item"><a href="blog.html">Fashion</a></li>
+                   <li class="link-item"><a href="blog2.html">Decor</a></li>
+                   <li class="link-item"><a href="blog3.html">Kitchenware</a></li>
+                   </ul></li>
+                <li class="link-item"><a href="login.html" class="link">Login</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <img src="img/loading.gif" class="loader" alt="">
+    <section class="form-section">
+        <div class="form-container">
+            <img src="homepage/homepage/candle.jpg" class="form-img" alt="">
+            <div class="form">
+                <h1 class="form-heading">Welcome Back Login Here</h1>
+
+                <input type="email" autocomplete="off" id="email" placeholder="email"><br>
+                <input type="password" autocomplete="off" id="password" placeholder="password"><br>
+
+                <span class="error">**this is an error</span>
+
+
+
+                <button class="submit-btn">Log In</button><br>
+                <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+                <a href="signup.html" class="other-form-link">Don't have an account? Create</a>
 
             </div>
-            
-        </section> 
-        <script src="common.js"></script>
-        <script src="form.js"></script>
+            <img src="img/C:\Users\smara\Downloads\login-bg.png" class="form-ing" alt="">
+
+        </div>
+
+    </section>
+
+    <script src="common.js"></script>
+    <script src="form.js"></script>
+    <script>
+        function onSignIn(googleUser) {
+            // Useful data for your client-side scripts:
+            var profile = googleUser.getBasicProfile();
+            console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+            console.log('Full Name: ' + profile.getName());
+            console.log('Given Name: ' + profile.getGivenName());
+            console.log('Family Name: ' + profile.getFamilyName());
+            console.log("Image URL: " + profile.getImageUrl());
+            console.log("Email: " + profile.getEmail());
+
+            // The ID token you need to pass to your backend:
+            var id_token = googleUser.getAuthResponse().id_token;
+            console.log("ID Token: " + id_token);
+        }
+    </script>
+    <footer>        
+        ©️Made by StackOverFlowers 2022-23</footer>
 
 
-    </body>
+</body>
+
 </html>

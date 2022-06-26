@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Pages</title>
+    <title>Saree1</title>
     <link rel="stylesheet" href="product.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,23 +14,40 @@
 
 </head>
 <body>
-<!--Navbar-->
-<nav class="navbar bg">
+    <script src="home.js"></script>
+ <!-- Navbar -->
+ <nav class="navbar1">
     <ul class="links">
-        <li class="link-item"><a href="#" class="link">Home</a></li>
-        <li class="link-item"><a href="#" class="link">Product</a></li>
-        <li class="link-item"><a href="#" class="link">About</a></li>
-        <li class="link-item"><a href="#" class="link">Contact us</a></li>
+        <li class="link-item"><a href="index.html" class="link">Home</a></li>
+        
+        <li class="link-item"><div class="dropdown">
+            <button class="dropbtn">Products</button>
+            <div class="dropdown-content">
+              <ul><a href="#">Handloom</a>
+               <li><a href="sarees.html">Saree</a></li>
+               <li>kurtis for women</li>
+               <li>handbags</li>
+               <li>dhupattas</li>
+               <li>kurta for men</li>
+               <li>waistcoat for men</li></ul>
+             <ul> <a href="#">Handicraft</a>
+                <li>utensils</li>
+            
+            <li>cookware</li>
+            <li>containers</li>
+            <li>decor items</li>
+            <li>idols</li>
+          </div></li>
     </ul>
-    <div class="user-interaction"></div>
-    <img src="image/shopping_bag_FILL0_wght600_GRAD0_opsz48.png" alt="" class="cart-icon">
-</nav>
-<span class="cart-count">0</span>
-</div>
-<div class="user">
-    <img src="image/manage_accounts_FILL0_wght400_GRAD0_opsz48.png" class="user-icon" alt="">
-</div>
-</div>
+    <div class="user-interaction">
+        <div class="cart">
+            <img src="image/shopping_bag_FILL0_wght600_GRAD0_opsz48.png" alt="" class="cart-icon">
+            <span class="cart-count">0</span>
+        </div>
+        <div class="user">
+            <img src="image/manage_accounts_FILL0_wght400_GRAD0_opsz48.png" class="user-icon" alt="">
+        </div>
+    </div>
 </nav>
 <!-- Product Details -->
 <section class="product-detail">
@@ -138,7 +156,7 @@
     </div>
 </section>
 
-<footer>©️Made by StackOverFlowers 2022-23</footer>
+<footer>©️Made by code pirates 2022-23</footer>
 <script src="product.js"></script>
 
     

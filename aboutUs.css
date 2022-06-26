@@ -1,0 +1,18 @@
+.heading{
+    font: 800px;
+    font-family:'Lato',sans-serif;
+    margin-top: 0;
+    text-align: center;
+    justify-content: center;
+    /* border: 20px, rgb(235, 112, 112); */
+    background-color: #d5be8b;
+}
+.rest{
+    padding: 15px,20px,15px;
+    background-color: white;
+    font-family: 'Lato',sans-serif;
+    font-size: 20px;
+}
+footer{
+    text-align: center;
+}

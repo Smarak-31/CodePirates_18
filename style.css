@@ -8,8 +8,8 @@ body{
 }
 .header-section{
     width: 100%;
-    height: 900px;
-    background-image:"D:\KraftOfi\image\img-20220623T203315Z-001\img\Pinterest_files\incense holder\background\kitchen\utensils\Artist Uses Real Found Flowers to Create Delicate One-of-a-Kind Ceramics.jpg";
+    height: 800px;
+    background-image:url('image/img-20220623T203315Z-001/img/Pinterest_files/incense holder/background/kitchen/utensils/Artist Uses Real Found Flowers to Create Delicate One-of-a-Kind Ceramics.jpg');
     
     background-size: cover;
     display: flex;
@@ -22,9 +22,48 @@ body{
     /* color: white; */
 }
 .heading span{
-    color: #d5be8b;
+    color: black;
 }
-.navbar{
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    
+    
+  }
+  .flexcard{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 10px;
+    margin: 20px 10px;
+    
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+.navbar
+{
+    background-color: #d5be8b;
     width: 100%;
     height: 80px;
     position: fixed;
@@ -35,6 +74,40 @@ body{
     z-index: 9;
     transition: 0.5s;
 }
+.navbar1
+{
+    background-color: #d5be8b;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 9;
+    transition: 0.5s;
+}
+.navbar2
+{
+    background-color: transparent;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 9;
+    transition: 0.5s;
+}
+.product-img{
+    opacity: 0.5;
+}
+.product-img:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+    opacity: 1;
+}
 .navbar.bg{
     background: white;
 }
@@ -44,7 +117,9 @@ body{
     list-style: none;
 }
 .link-item{
-    margin: 10px;
+    margin: 5px;
+    list-style: none;
+    text-decoration: none;
 }
 .link{
     font-size: 20px;
@@ -54,11 +129,11 @@ body{
     opacity: 0.7;
     transition: 0.3sec;
 }
-.navbar.bg.link{
+.navbar.link{
     color: black;
     opacity: 0.5;
 }
-.link.active, .link:hover .navbar.bg.link:hover, .navbar.bg.link.active{
+.link.active, .link:hover .navbar.link:hover, .navbar.link.active{
     opacity: 1;
 }
 .user-interaction{
@@ -104,22 +179,21 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.product-card{
+/* .product-card{
     border: 5px solid #d5be8b;
     height: 300px;
     width: 300px;
     overflow: hidden;
     position: relative;
     background: #d5be8b;
-}
-.product-card:nth-child(even){
-    border-color: black;
-}
+} */
+
+
 .product-image{
     object-fit: cover;
-    height: 100%;
-    width: 100%;
-    transition: 00.5s;
+    height: 300px;
+    width: 300px;
+    /* transition: 00.5s; */
 }
 .product-name{
     position: absolute;
@@ -133,12 +207,7 @@ body{
     opacity: 0;
     transition: 0.5s;
 }
-.product-card:hover .product-name{
-    opacity: 1;
-}
-.product-card:hover .product-image{
-    opacity: 0;
-}
+
 .mid-section{
     width: 100%;
     height: 800px;
@@ -191,7 +260,7 @@ body{
 .image-collage{
     width: 100%;
     height: 100%;
-    background-image: url(image/img-20220623T203315Z-001/img/bg-1.png);
+    background-image: url('homepage/homepage/Untitled design.png');
     background-size: cover;
 }
 .image-collection{
@@ -282,7 +351,7 @@ body{
     text-transform: capitalize;
 }
 .u-review{
-    opacity: 0.5;
+    opacity: 1;
 }
 .end{
     padding: 50px 5px;
@@ -296,16 +365,258 @@ body{
 
 }
 .end .title{
-    font-size: 100px;
-    line-height: 140px;
+    font-size: 80px;
+    line-height: 100px;
+}
+.form-section{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background: #fafafa;
+}
+.form-container{
+    width:60%;
+    min-width:300px;
+    height: 80vh;
+    background:#fff ;
+    overflow:hidden;
+    z-index:2;
+    display:flex;
+    box-shadow:0 0 100px rgba(0, 0,0,0.2);
+
+}
+.det{
+    
+    justify-content: center;
+    text-align: center;
 }
 footer{
     font-family: 'Times New Roman', Times, serif;
     color: black;
-    /* background: white; */
+    background: darkgray;
     width: 100%;
     
     /* line-height: 50px; */
     text-align: center;
     opacity: 1;
+}
+.about-us{
+    display: flex;
+    justify-content:space-around;
+    background-color: beige;
+    
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    text-transform: capitalize ;
+    font-family: 'cinzel', sans-serif;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    opacity: 0.7;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color:none;}
+  .product-detail{
+    width: 100%;
+    margin-top: 120px;
+    padding: 0 5vw;
+    display: flex;
+    gap: 40px;
+}
+.product-image{
+    width: 70%;
+    height: 600px;
+    object-fit: cover;
+
+}
+.product-title{
+    font-size: 60px;
+
+}
+.product-description{
+    margin: 30px 0;
+    font-family: 'lato', sans-serif;
+    opacity: 0.5;
+    font-size: 20px;
+    line-height: 30px;
+}
+.rating{
+    display: flex;
+}
+.rating .star{
+    width: 30px;
+    height: 30px;
+}
+.rating-count{
+    font-family: 'lato', sans-serif;
+    opacity: 0.4;
+    font-size: 14px;
+    line-height: 40px;
+    margin-left: 20px;
+}
+.price{
+    font-size: 60px;
+    margin: 20px 0;
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: darkgray;
+    color: white;
+    transform: rotateY(180deg);
+  }
+.button{
+    padding: 15px 40px;
+    border: none;
+    color: white;
+    outline: none;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.product-btn-buy{
+    background-color: #d5be8b;
+}
+.product-btn-add{
+    background-color: white;
+}
+.detail-des, .review , .add-rev{
+    width: 100%;
+    padding: 100px 5vw 0;
+
+}
+.product-container{
+    display: flex;
+}
+.des{
+    font-family: 'lato',sans-serif;
+    line-height: 30px;
+    font-size: 20px;
+    opacity: 0.5;
+}
+.Review-Headline, .review-field{
+    width: 100%;
+    height: 40px;
+    border: 2px solid darkgray;
+    margin: 10px 0;
+    padding: 10px;
+    line-height: 10px;
+    font-family: 'lato', sans-serif;
+    color: black;
+    outline: none;
+    text-transform: capitalize;
+
+}
+::placeholder{
+    color: darkgray;
+}
+.review-field{
+    height: 160px;
+    resize: none;
+    padding: 0 10px;
+}
+.Review-Headline:focus, .review-field:focus{
+    border-color: #d5be8b;
+}
+.Review-Headline:focus::placeholder, .review-field:focus::placeholder{
+    border-color: #d5be8b;
+}
+.rating-text{
+    font-family: 'lato', sans-serif;
+    color: darkgray;
+    text-transform: uppercase;
+
+}
+.rating-star{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.add-review{
+    border: none;
+    outline: none;
+    background-color: #d5be8b;
+    padding: 10px 20px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-top: 30px;
+    cursor: pointer;
 }

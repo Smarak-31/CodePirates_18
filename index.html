@@ -10,66 +10,90 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="search.css">
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar2">
         <ul class="links">
-            <li class="link-item"><a href="#" class="link">Home</a></li>
-            <li class="link-item"><a href="product.html" class="link">Product</a></li>
-            <li class="link-item"><a href="#" class="link">About</a></li>
-            <li class="link-item"><a href="#" class="link">Contact us</a></li>
+            <li class="link-item"><a href="index.html" class="link">Home</a></li>
+            
+            <li class="link-item"><div class="dropdown">
+                <button class="dropbtn">Products</button>
+                <div class="dropdown-content">
+                  <ul><a href="#">Handloom</a>
+                   <li class="link-item"><a href="sarees.html">Saree</a></li>
+                   <li class="link-item"><a href="kurtis.html"> kurtis for women</a></li>
+                   <li class="link-item"><a href="bags.html">handbags</a></li>
+                   <li class="link-item"><a href="dhupattas.html"> dhupattas</a></li>
+                   <li class="link-item"><a href="kurtas.html"> kurta for men</a></li>
+                   <li class="link-item"><a href="waistcoat.html"> waistcoat for men</a></li></ul>
+    
+    
+    
+                 <ul> <a href="#">Handicraft</a>
+                    <li class="link-item"><a href="utensils.html">utensils</a></li>
+                <li class="link-item"><a href="cookware.html">cookware</a></li>
+                <li class="link-item"><a href="containers.html"> containers</a></li>
+                <li class="link-item"><a href="decoritems.html">decor items</a> </li>
+              </div></li>
+              <li class="link-item"><div class="dropdown">
+                <button class="dropbtn">Blog</button>
+                <div class="dropdown-content">
+                  <ul>
+                   <li><a href="blog.html">Fashion</a></li>
+                   <li><a href="blog2.html">Decor</a></li>
+                   <li><a href="blog3.html">Kitchenware</a></li>
+                   </ul></li>
+                <li class="link-item"><a href="login.html" class="link">Login</a></li>
         </ul>
-        <div class="user-interaction">
-            <div class="cart">
-                <img src="D:\KraftOfi\image\shopping_cart_FILL0_wght400_GRAD0_opsz48.png" alt="" class="cart-icon">
-                <span class="cart-count">0</span>
-            </div>
-            <div class="user">
-                <img src="image/manage_accounts_FILL0_wght400_GRAD0_opsz48.png" class="user-icon" alt="">
-            </div>
-        </div>
     </nav>
     <!-- header -->
     <header class="header-section">
-        
-        <h1 class="heading"><span>Traditional</span> Handloom</h1>
+        <br>
+        <br>
+        <h1 class="heading"><span>KraftOfi</h1>
+            <br>
+
+            <!-- <p class="heading">you ask,we craft.</p> -->
+            <br>
+
     </header>
     <!-- Best selling -->
     <section class="best-selling">
         <h1 class="section-title">Best Selling Products</h1>
         <div class="product-container">
             <div class="product-card">
-                <img src="image/hackerwar/saree/black-handloom-saree-with-golden-border-1200x1800.webp" alt=""
+                <a href="sarees.html"><img src="image/hackerwar/saree/black-handloom-saree-with-golden-border-1200x1800.webp" alt=""
                     class="product-img" height="300px" width="300px">
-                <p class="product-name">Saree</p>
+                <p class="product-name">Saree</p></a>
             </div>
             <div class="product-card">
-                <img src="image/hackerwar/bags/shopping (1).webp" alt="" class="product-img" height="300px"
+                <a href="bag.html"><img src="image/hackerwar/bags/shopping (1).webp" alt="" class="product-img" height="300px"
                     width="300px">
-                <p class="product-name">Bag</p>
+                <p class="product-name">Bag</p></a>
             </div>
             <div class="product-card">
-                <img src="image/hackerwar/men kurta/shopping (1).webp" alt="" class="product-img" height="300px"
+                <a href="kurtas.html"><img src="image/hackerwar/men kurta/shopping (1).webp" alt="" class="product-img" height="300px"
                     width="300px">
-                <p class="product-name">Kurta</p>
+                <p class="product-name">Kurta</p></a>
             </div>
             <div class="product-card">
+                <a href="waistcoat.html">
                 <img src="image/hackerwar/waistcoat/shopping (1).webp" alt="" class="product-img" height="300px"
                     width="300px">
-                <p class="product-name">Waistcoat</p>
+                <p class="product-name">Waistcoat</p></a>
             </div>
         </div>
     </section>
     <!-- Mid-section -->
     <section class="Mid-section">
         <div class="sec-item-container">
-            <img src="image/img-20220623T203315Z-001/img/bg-2.png" alt="" class="section-bg" height="100%" width="100%">
+            <img src="homepage\homepage\mid2.png" alt="" class="section-bg" height="100%" width="100%">
             <div class="section-info">
                 <h1 class="title">Premium Quality in <span>afforable</span> price</h1>
-                <p class=""info> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id corrupti facere corporis. Qui veritatis eius fuga? A hic aperiam totam aspernatur animi, quo facere, doloremque voluptatum dolor sapiente fugiat voluptas?
+                <p class="info"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id corrupti facere corporis. Qui veritatis eius fuga? A hic aperiam totam aspernatur animi, quo facere, doloremque voluptatum dolor sapiente fugiat voluptas?
                 </p>
             </div>
         </div>
@@ -78,9 +102,9 @@
     <section class="image-midsection">
         <div class="image-collage">
             <div class="image-collection">
-                <img src="image/img-20220623T203315Z-001/img/poster-1.png" alt="" class="collage-image">
-                <img src="image/img-20220623T203315Z-001/img/poster-2.png" alt="" class="collage-image">
-                <img src="image/img-20220623T203315Z-001/img/poster-3.png" alt="" class="collage-image">
+                <img src="homepage\homepage\cup.jpg" alt="" class="collage-image">
+                <img src="homepage\homepage\Malkha hand embroidered mirror work co-ord set.jpg" alt="" class="collage-image">
+                <img src="homepage\homepage\Blumentopf Face.jpg" alt="" class="collage-image">
             </div>
         </div>
     </section>
@@ -88,40 +112,116 @@
     <section class="review">
         <h1 class="sec-title">What our <span>Customers</span> says about us</h1>
         <div class="review-container">
-            <div class="review-card">
-                <div class="user-dp" data-rating="⭐4.9"><img src="image/img-20220623T203315Z-001/img/user 1.png" alt=""></div>
-                <h2 class="review-title">Best Quality</h2>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="user-dp" data-rating="⭐4.9"><img src="image/img-20220623T203315Z-001/img/user 2.png" alt="" height="50px" width="50px"></div>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2 class="review-title">Best Quality</h2>
                 <p class="u-review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempore dicta facilis soluta debitis animi! Aliquam rem eligendi, ullam inventore commodi iste. Impedit dolores doloremque, nemo numquam corporis iure tempore.</p>
-            </div>
-            <div class="review-card">
-                <div class="user-dp" data-rating="⭐4.9"><img src="image/img-20220623T203315Z-001/img/user 2.png" alt=""></div>
-                <h2 class="review-title">Best Quality</h2>
+                  </div>
+                </div>
+              </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="user-dp" data-rating="⭐4.9"><img src="image/img-20220623T203315Z-001/img/user 2.png" alt="" height="50px" width="50px"></div>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2 class="review-title">Best Quality</h2>
                 <p class="u-review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempore dicta facilis soluta debitis animi! Aliquam rem eligendi, ullam inventore commodi iste. Impedit dolores doloremque, nemo numquam corporis iure tempore.</p>
-            </div>
-            <div class="review-card">
-                <div class="user-dp" data-rating="⭐4.9"><img src="image/img-20220623T203315Z-001/img/user 3.png" alt=""></div>
-                <h2 class="review-title">Best Quality</h2>
+                  </div>
+                </div>
+              </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="user-dp" data-rating="⭐4.9"><img src="image/img-20220623T203315Z-001/img/user 2.png" alt="" height="50px" width="50px"></div>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2 class="review-title">Best Quality</h2>
                 <p class="u-review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempore dicta facilis soluta debitis animi! Aliquam rem eligendi, ullam inventore commodi iste. Impedit dolores doloremque, nemo numquam corporis iure tempore.</p>
-            </div>
-            <div class="review-card">
-                <div class="user-dp" data-rating="⭐4.9"><img src="image/img-20220623T203315Z-001/img/user 4.png" alt=""></div>
-                <h2 class="review-title">Best Quality</h2>
+                  </div>
+                </div>
+              </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="user-dp" data-rating="⭐4.9"><img src="image/img-20220623T203315Z-001/img/user 2.png" alt="" height="50px" width="50px"></div>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2 class="review-title">Best Quality</h2>
                 <p class="u-review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempore dicta facilis soluta debitis animi! Aliquam rem eligendi, ullam inventore commodi iste. Impedit dolores doloremque, nemo numquam corporis iure tempore.</p>
+                  </div>
+                </div>
+              </div>
+            
+                
             </div>
-        </div>
-    </section>
+           </section>
     <!-- End section -->
     <section class="end">
         <div class="sec-item-container">
-            <img src="image/img-20220623T203315Z-001/img/bg-3.png" alt="" class="section-bg" height="100%" width="100%">
+            <img src="homepage\homepage\end1.png" alt="" class="section-bg" height="100%" width="100%">
             <div class="section-info">
                 <h1 class="title"><span>ORDER NOW</span></h1>
                 <p class=""info> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id corrupti facere corporis. Qui veritatis eius fuga? A hic aperiam totam aspernatur animi, quo facere, doloremque voluptatum dolor sapiente fugiat voluptas?
                 </p>
             </div>
         </div>
+        <br>
     </section>
-    <footer>©️Made by StackOverFlowers 2022-23</footer>
+    <!-- <div class="det1">
+            <div class="form-container">
+            <img src="image/easy return.png" alt="" srcset="" height="100px" width="100px">
+            Easy Return </div>
+        <div class="det2">
+            <img src="image/fast-delivery-icon-free-vector.jpg" alt="" srcset="" height="100px" width="100px">Fast Delivery</div>
+            <div class="det3">
+            <img src="image/istockphoto-1303932318-612x612.jpg" alt="" srcset="" height="100px" width="100px">Money back guarantee
+        </div>
+
+        </div>
+         -->
+         <hr>
+
+    <section class="about-us">
+        <div class="inneraboutus">
+            <ul><h5>My Account</h5>
+            <li class="links"><a href="login.html" class="link-item">Login</a></li>
+            <li class="links"><a href="signup.html" class="link-item">Create Account</a></li>
+        
+            </ul>
+        </div>
+        <div class="inneraboutus">
+            <ul><h5>About us</h5>
+            <li class="links"><a href="aboutUs.html" class="link-item">About US</a></li>
+            <li class="links"><a href="RefundPolicy.html" class="link-item">Refund Policy</a></li>
+            <li class="links"><a href="ReturnPolicy.html" class="link-item">Return Policy</a></li>
+            </ul>
+        </div>
+        <div class="inneraboutus">
+            <ul><h5>Contact Us</h5>
+                <br>
+                
+                Have Questions & Suggestions?<br>
+                kraftofi@gmail.com <br>
+                Need Assitance? Give us a call <br>
+                +91-(xxx)-xxx-xxxx
+            </ul>
+        </div>
+        <div class="inneraboutus">
+            <ul><h5>Address</h5>
+                <br>
+                
+                Currently no on-ground office
+            </ul>
+        </div>
+    </section>
+    </div>
+    <footer>        
+        ©️Made by StackOverFlowers 2022-23</footer>
     <script src="home.js"></script>
 
 </body>
